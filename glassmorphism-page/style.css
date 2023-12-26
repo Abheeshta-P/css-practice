@@ -42,7 +42,6 @@ svg{
     align-items: center;
     height: 100%;
     border-bottom: 2px solid white;
-    padding-bottom: 5px;
 }
 .pic{
     margin-right: 10px;
@@ -112,6 +111,9 @@ left: 0;
     & .check{
         display: flex;
         align-items: center;
+    }
+    & input{
+        accent-color: #206a58;
     }
     
 }
