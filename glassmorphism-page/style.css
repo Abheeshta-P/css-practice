@@ -10,7 +10,7 @@ html{
 :root{
     --body-font:'Poppins', sans-serif;
     --h1-font-size:1.75rem;
-    --normal-font-size:1rem;
+    --normal-font-size:1.2rem;
     --small-font-size:0.813rem;
     --font-medium:500;
 }
@@ -22,9 +22,11 @@ body,input,button{
 input,button{
     border: none;
     outline: none;
+    cursor: pointer;
 }
 a{
     text-decoration: none;
+    color: inherit;
 }
 img{
     max-width: 100%;
@@ -36,9 +38,11 @@ svg{
 }
 .detailssec{
     display: flex;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
     align-items: center;
     height: 100%;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
 }
 .pic{
     margin-right: 10px;
@@ -48,7 +52,7 @@ svg{
     position: relative;
 }
 .input-me{
-    height: 25px;
+    height: 30px;
     font-size: 1.1rem;
     color: white;
     background-color: transparent;
@@ -57,7 +61,8 @@ body{
     background-color: white;
     width: 100%;
     height: 100vh;
-    background-image: url(bgwebsite.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+    url(bgwebsite.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -66,10 +71,10 @@ body{
     color: white;
 }
 .container{
-    width: fit-content;
+    width: 350px;
     height: fit-content;
     border: 1px solid red;
-padding: 2.5rem 1.5rem;
+padding: 2.5rem ;
 border: 2px solid white;
     background-color: rgba(26, 26, 26, 0.1);
     backdrop-filter: blur(8px);
@@ -85,6 +90,50 @@ border: 2px solid white;
 .float{
     position: absolute;
 left: 0;
-    top: 20%;
+    top: 25%;
     font-size: 1.1rem;
+}
+.inputs-pic{
+    display: flex;
+}
+.show-input{
+    display: flex;
+    justify-content: space-between;
+}
+.show{
+    display: flex;
+}
+.remembersec{
+    display: flex;
+    justify-content: space-between;
+    & label{
+        margin-left:5px;
+    }
+    & .check{
+        display: flex;
+        align-items: center;
+    }
+    
+}
+.loginbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & button{
+        padding: 11px 95px;
+        border: none;
+        border-radius: 8px;
+        margin-top: 25px;
+        margin-bottom: 35px;
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+}
+.registersec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & a{
+        font-weight: 600;
+    }
 }
